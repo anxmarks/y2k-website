@@ -2,7 +2,11 @@ body {
         background: linear-gradient(135deg, #eca2d4, #b792e7);
         background-attachment: fixed;
         font-family: sans-serif;
+        
       }
+html, body{
+    cursor: url('../../assets/images/purple_cursor.cur'), auto;
+}
 h1 a{
         font-size: 1.5em;
         color: #ffffff;
