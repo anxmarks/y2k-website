@@ -124,3 +124,26 @@ main {
     margin: 0 auto;
     display: block;
 }
+
+.ipod {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.song {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    z-index: 1;
+}
+
+.ipod-container {
+    position: relative;
+    width: 300;  /* ← tamanho da imagem de baixo */
+    height: 400px;
+}
