@@ -94,9 +94,9 @@ main {
     background: rgba(255, 215, 0, 0.15);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 4px 10px;
-    font-size: 12px;
+    font-size: 15px;
     color: #ffd700;
-    font-family: 'Meddon', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .box-content {
@@ -125,6 +125,14 @@ main {
     display: block;
 }
 
+.secao-titulo {
+  color: #ffd700;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
 .ipod {
     width: 100%;
     display: block;
@@ -146,4 +154,28 @@ main {
     position: relative;
     width: 300;  /* ← tamanho da imagem de baixo */
     height: 400px;
+}
+
+.music-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.music-link a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.music-link a:hover {
+  text-decoration: underline;
+}
+
+.music-note,
+.disk {
+  width: 16px;
+  height: 16px;
 }
