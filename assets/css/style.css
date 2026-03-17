@@ -119,10 +119,48 @@ main {
     color: #ffd700;
 }
 
-.welcome {
+.welcome-gif {
     width: 50%;
     margin: 0 auto;
     display: block;
+}
+
+.intro-text1 {
+    text-align: center;
+    font-size: 18px;
+    color: #ffd700;
+    margin-top: 60px;
+    font-family: 'Silkscreen', cursive;
+}
+
+.intro-text2 {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 8px;
+    font-family: 'Silkscreen', cursive;
+}
+
+.intro-text3 {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 8px;
+    font-family: 'Silkscreen', cursive;
+}
+
+.divider-gif {
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+}
+
+.cliques {
+    text-align: center;
+    font-size: 16px;
+    color: #ffd700;
+    margin-top: 12px;
+    font-family: 'Silkscreen', cursive;
 }
 
 .secao-titulo {
@@ -152,7 +190,7 @@ main {
 
 .ipod-container {
     position: relative;
-    width: 300;  /* ← tamanho da imagem de baixo */
+    width: 300;
     height: 400px;
 }
 
@@ -178,4 +216,11 @@ main {
 .disk {
   width: 16px;
   height: 16px;
+}
+
+.home-btn {
+  width: 38%;
+  margin: 0 auto;
+  position: fixed;
+  left: -5px;
 }
