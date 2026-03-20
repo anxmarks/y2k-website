@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title> ✰ lost moon ˚☽˚.⋆</title>
+     <link rel="icon" href="assets/images/moon2_htg_icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="assets/css/style.css">
+    
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="index.html">Lost Moon</a></h1>
+    </header>
+
+    <div class="layout">
+      <!-- left sidebar -->
+      <aside class="left">
+        <div class="box">
+          <div class="box-title">navegação</div>
+           <div class="box-content">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT ME</a>
+          <a href="blog.html">BLOG</a>
+          <!--<img src="assets\buttons\button.png" alt="home-btn" class="home-btn">
+          <img src="assets\buttons\button-left.png" alt="home-btn-left" class="home-btn-left"> -->
+          </div>
+        </div>
+      </aside>
+
+      <!-- main content -->
+      <main>
+        
+      </main>
+        
+      <!-- right sidebar -->
+      <aside class="right">
+        <div class="box">
+           <div class="box-title">✦ WHAT I AM INTO RIGHT NOW ✦</div>
+        <div class="box-content">
+          <div class="ipod-container">
+            <img src="assets/images/ipod_ver2.png" alt="ipod" class="ipod">
+            <img src="assets/music-albuns/arirang.jpg" class="song">
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <div class="music-link">
+              <img src="assets/icons/music.png" alt="musicnote" class="music-note">
+              <a href="https://open.spotify.com/prerelease/1DcxHW214MCDxXju71RbvX?si=96d3e7eb4cc14c71" target="_blank">Listen with me!!</a>
+              <img src="assets/icons/disk.png" alt="disk" class="disk">
+            </div>
+          </div>
+          </div>
+        </div>
+        
+
+    </div>
+    <script>
+  const amount = 120;
+
+  for (let i = 0; i < amount; i++) {
+    const star = document.createElement('div');
+
+    const x = Math.random() * 100;  // posição % da largura
+    const y = Math.random() * 100;  // posição % da altura
+    const size = Math.random() < 0.1 ? 4    // 10% grandes
+              : Math.random() < 0.3 ? 3    // 20% médias
+              : 1.5;                      // 70% pequenas
+    const yellow = Math.random() < 0.1;
+    const opacity = 0.4 + Math.random() * 0.6;
+    const duration = 1 + Math.random() * 4;      // ← velocidade aleatória
+    const delay = Math.random() * 5;            // ← começa em momentos diferentes
+
+    star.style.cssText = `
+      position: fixed;
+      left: ${x}vw;
+      top: ${y}vh;
+      width: ${size}px;
+      height: ${size}px;
+      background: ${yellow ? '#ffd700' : '#ffffff'};
+      border-radius: 50%;
+      opacity: ${opacity};
+      pointer-events: none;
+      z-index: 0;
+      animation: blink ${duration}s ${delay}s infinite;
+    `;
+
+    document.body.appendChild(star);
+  }
+</script>
+  </body>
+</html>
