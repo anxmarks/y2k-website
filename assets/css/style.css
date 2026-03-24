@@ -224,3 +224,34 @@ main {
   position: fixed;
   left: -5px;
 }
+
+/* ABOUT PAGE */
+
+.cloud-divider {
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+}
+
+.camera {
+    width: 40%;
+    display: block;
+    float: left;
+    margin-right: 12px;
+    margin-top: 50px;
+    margin-left: 0px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.me-gif {
+    width: 32%;
+    float: left;
+    margin-right: 12px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 12px;
+    margin-top: 50px;
+    margin-left: 0px;
+    z-index: 1;
+}  
