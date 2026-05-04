@@ -32,6 +32,15 @@ body::after {
 html, body{
     cursor: url('../../assets/images/purple_cursor.cur'), auto;
 }
+
+.site-wrapped {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 h1 a{
         font-size: 1.2em;
         color: #ffffff;
@@ -57,8 +66,20 @@ header {
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.1) inset;
     width: 1200px;
     text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 12px 12px 12px 12px;
+    margin: 0 auto 0px auto;
+    border-radius: 45px 45px 0px 0px;
+}
+
+.subheader {
+  width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  text-align: center;
+  padding: 4px 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Silkscreen', cursive;
 }
 
 .layout {
@@ -67,6 +88,7 @@ header {
     gap: 8px;
     width: 1200px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .left, .right {
@@ -75,10 +97,14 @@ header {
     gap: 6px;
 }
 
+.left .box:last-child,
+.right .box:last-child {
+  flex: 1;
+}
+
 main {
     background: rgba(255, 255, 255, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
     padding: 16px;
     color: #fff;
 }
@@ -86,7 +112,7 @@ main {
 .box {
     background: rgba(255, 255, 255, 0.50);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
+    border-radius: 0px;
     overflow: hidden;
 }
 
@@ -111,12 +137,25 @@ main {
     text-decoration: none;
     font-size: 12px;
     padding: 2px 4px;
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 .box-content a:hover {
     background: rgba(255, 255, 255, 0.1);
     color: #ffd700;
+}
+
+.footer {
+  background-color: #808080;
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  font-size: 11px;
+  color: #ffffff;
+  border-radius: 0px 0px 45px 45px;
+  padding: 8px 0;
+
 }
 
 .welcome-gif {
@@ -147,6 +186,12 @@ main {
     color: #ffffff;
     margin-top: 8px;
     font-family: 'Silkscreen', cursive;
+}
+
+.construction-gif {
+    width: 60%;
+    margin: 20px auto;
+    display: block;
 }
 
 .divider-gif {
@@ -237,7 +282,7 @@ main {
 }
 
 .titlebar {
-  background: #000080; /* azul clássico do Windows */
+  background: #000080;
   color: #ffffff;
   padding: 4px 6px;
   display: flex;
@@ -302,22 +347,35 @@ main {
     margin: 20px auto;
 }
 
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .camera-container {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 250px;
+  flex-shrink: 0; 
 }
 
 .camera {
   position: absolute;
   width: 100%;
-  z-index: 2;  /* ← na frente */
+  z-index: 2; 
 }
 
 .me-gif {
   position: absolute;
   width: 60%;
-  top: 40px;   /* ← ajuste para posicionar */
-  left: 9%;   /* ← joga para a direita */
-  z-index: 1;  /* ← atrás da câmera */
+  top: 40px;   
+  left: 9%;  
+  z-index: 1; 
+}
+
+.about-text {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.8;
 }

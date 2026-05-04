@@ -17,9 +17,16 @@
 
   </head>
   <body>
+    <div class="site-wrapper">
+
+    
     <header>
         <h1><a href="index.html">Lost Moon</a></h1>
     </header>
+
+    <div class="subheader">
+      ✦ forever under construction ☽
+    </div>
 
     <div class="layout">
       <!-- left sidebar -->
@@ -38,17 +45,18 @@
 
       <!-- main content -->
       <main>
-        <img src="assets\images\0314.gif" alt="welcome gif" class="welcome-gif">
+        <img src="assets\gifs\welcome.gif" alt="welcome gif" class="welcome-gif">
         <p class="big-title">hello! this is a silly website! </p>
         <p class="medium-text"> The goal of this project is to practice my html and css skills, and to have fun creating a cute website like the ones I used to visit as unsupervised child. I hope you enjoy it! feel free to explore and check out the different sections.</p>
         <p class="small-text">(Also, please understand that i have no ideia what im doing...)</p>
-        <img src="assets\blinkies\divider.gif" alt="divider-gif" class="divider-gif">
+        <img src="assets\gifs\constructionline.gif" alt="construction-gif" class="construction-gif">
+        <img src="assets\gifs\divider.gif" alt="divider-gif" class="divider-gif">
         <p class="medium-title">Cliques!!</p>
         <div class="cliques-div">
         <a href="https://grrrl.valentinely.cc/" target="_blank">
           <img src="assets\blinkies\madebya.png" alt="made by a girl">
         </a>
-        <img src="assets\blinkies\divider.gif" alt="divider-gif" class="divider-gif">
+        <img src="assets\gifs\divider.gif" alt="divider-gif" class="divider-gif">
         <p class="medium-title">To Do List</p>
 
         <div class="window">
@@ -102,8 +110,16 @@
           </div>
         </div>
         
-
+        
     </div>
+
+    <footer id="footer" class="footer">
+          <p>coded with rage</p>
+        </footer>
+    
+    </div>
+
+    
     <script>
   const amount = 120;
 
@@ -117,8 +133,8 @@
               : 1.5;                      // 70% pequenas
     const yellow = Math.random() < 0.1;
     const opacity = 0.4 + Math.random() * 0.6;
-    const duration = 1 + Math.random() * 4;      // ← velocidade aleatória
-    const delay = Math.random() * 5;            // ← começa em momentos diferentes
+    const duration = 1 + Math.random() * 4;      // velocidade aleatória
+    const delay = Math.random() * 5;            // começa em momentos diferentes
 
     star.style.cssText = `
       position: fixed;
