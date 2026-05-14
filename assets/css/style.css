@@ -33,7 +33,7 @@ html, body{
     cursor: url('../../assets/images/purple_cursor.cur'), auto;
 }
 
-.site-wrapped {
+.site-wrapper {
   width: 1200px;
   margin: 0 auto;
   border: 1px solid rgba(255, 215, 0, 0.3);
